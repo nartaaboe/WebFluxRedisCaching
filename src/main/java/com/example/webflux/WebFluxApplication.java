@@ -13,7 +13,7 @@ public class WebFluxApplication {
     @Bean
     public ApplicationRunner saveMovies(MovieRepository repository) {
         Flux<Movie> movies = Flux.just(
-                new Movie(null, "Catch me if you can"),
+                new Movie(null, "Catch me if you can."),
                 new Movie(null, "Interstellar"),
                 new Movie(null, "Fight Club"),
                 new Movie(null, "Creed"),
